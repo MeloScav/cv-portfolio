@@ -1,20 +1,3 @@
-html,
-body,
-#root {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: default;
-}
-
 .block {
   display: flex;
   flex-direction: column;
@@ -27,30 +10,34 @@ body {
   .card {
     width: 25vw;
     height: 25vw;
-    background: black;
-    -webkit-border-radius: 70px;
-    border-radius: 70px;
+    background: $black;
+    -webkit-border-radius: calculateRem(70);
+    border-radius: calculateRem(70);
     background-image: url("./../assets/logoMsBlueW.png");
     background-position: center center;
     background-size: 20vw;
     background-repeat: no-repeat;
-    -webkit-box-shadow: 0px 10px 30px -5px rgba(251, 251, 251, 0.3);
-    box-shadow: 0px 10px 30px -5px rgba(251, 251, 251, 0.3);
+    -webkit-box-shadow: 0 calculateRem(10) calculateRem(30) calculateRem(-5)
+      rgba(251, 251, 251, 0.3);
+    box-shadow: 0 calculateRem(10) calculateRem(30) calculateRem(-5)
+      rgba(251, 251, 251, 0.3);
     -webkit-transition: box-shadow 0.5s;
     transition: box-shadow 0.5s;
     will-change: transform;
     border: 0.5vw solid rgb(20, 151, 212);
     cursor: pointer;
     &:hover {
-      -webkit-box-shadow: 0px 30px 100px -10px rgba(255, 255, 255, 0.4);
-      box-shadow: 0px 30px 100px -10px rgba(255, 255, 255, 0.4);
+      -webkit-box-shadow: 0 calculateRem(30) calculateRem(100) calculateRem(-10)
+        rgba(255, 255, 255, 0.4);
+      box-shadow: 0 calculateRem(30) calculateRem(100) calculateRem(-10)
+        rgba(255, 255, 255, 0.4);
     }
   }
 
   .social {
     opacity: 0;
     position: relative;
-    margin: 10px;
+    margin: calculateRem(10);
     width: auto;
     height: auto;
     -webkit-border-radius: 100%;
@@ -58,7 +45,7 @@ body {
     border-color: transparent;
     display: inline-block;
 
-    font-size: 17px;
+    font-size: calculateRem(17);
     text-align: center;
 
     cursor: pointer;
@@ -91,9 +78,9 @@ body {
 /*   Button see more : hover animation   */
 .moveButton {
   position: relative;
-  width: 30px;
-  height: 30px;
-  line-height: 50px;
+  width: calculateRem(30);
+  height: calculateRem(30);
+  line-height: calculateRem(50);
 
   -webkit-perspective: 50em;
   perspective: 50em;
@@ -105,9 +92,9 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    border: 2px solid transparent;
+    border: calculateRem(2) solid transparent;
     content: "";
-    z-index: -1;
+    z-index: 0;
     -webkit-border-radius: 50%;
     border-radius: 50%;
   }

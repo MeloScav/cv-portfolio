@@ -45,32 +45,30 @@ const HomePage = () => {
   //   }
 
   return (
-    <>
-      <div className="block">
-        <animated.div
-          className="card"
-          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-          onMouseLeave={() => set({ xys: [0, 0, 1] })}
-          style={{ transform: props.xys.interpolate(trans) }}
+    <div className="block">
+      <animated.div
+        className="card"
+        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+        style={{ transform: props.xys.interpolate(trans) }}
+        onClick={() => {
+          setButtonMove(true);
+        }}
+      />
+
+      <div className="divButtons">
+        <GithubSVG />
+        <LinkedinSVG />
+        <Button
+          value={"see more"}
+          class={"social moveButton"}
+          alt={"button"}
           onClick={() => {
-            setButtonMove(true);
+            setButtonSeeMore(true);
           }}
         />
-
-        <div className="divButtons">
-          <GithubSVG />
-          <LinkedinSVG />
-          <Button
-            value={"see more"}
-            class={"social moveButton"}
-            alt={"button"}
-            onClick={() => {
-              setButtonSeeMore(true);
-            }}
-          />
-        </div>
       </div>
-    </>
+    </div>
   );
 };
 
