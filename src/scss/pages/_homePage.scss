@@ -1,0 +1,126 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
+
+  .card {
+    width: 25vw;
+    height: 25vw;
+    background: black;
+    -webkit-border-radius: 70px;
+    border-radius: 70px;
+    background-image: url("./../assets/logoMsBlueW.png");
+    background-position: center center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 10px 30px -5px rgba(251, 251, 251, 0.3);
+    box-shadow: 0px 10px 30px -5px rgba(251, 251, 251, 0.3);
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+    will-change: transform;
+    border: 0.5vw solid rgb(20, 151, 212);
+    cursor: pointer;
+    &:hover {
+      -webkit-box-shadow: 0px 30px 100px -10px rgba(255, 255, 255, 0.4);
+      box-shadow: 0px 30px 100px -10px rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .social {
+    opacity: 0;
+    position: relative;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border-color: transparent;
+    display: inline-block;
+
+    font-size: 17px;
+    text-align: center;
+
+    cursor: pointer;
+  }
+  .github:hover path {
+    transition: all 0.45s ease-in-out;
+    fill: $buttonHomePage;
+  }
+  .linkedin:hover path {
+    transition: all 0.45s ease-in-out;
+    fill: $buttonHomePage;
+  }
+
+  .clicked {
+    opacity: 1;
+    -webkit-transition: 1.3s all ease;
+    transition: 1.3s all ease;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+
+.divButtons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/*   Button see more : hover animation   */
+.moveButton {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 50px;
+
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid transparent;
+    content: "";
+    z-index: -1;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  &:before,
+  &:after {
+    -webkit-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+  }
+  &:hover:after,
+  &:active:after,
+  &.hover:after {
+    border-color: transparent $buttonHomePage;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
