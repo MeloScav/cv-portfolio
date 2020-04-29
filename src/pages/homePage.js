@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+
+// Import pages
+import SeeMore from "./seeMore";
 
 // Import components
 import Button from "./../components/buttonComponent";
 
-// SVG images
+// SVG
 import GithubSVG from "./../components/SVG/githubSVG";
 import LinkedinSVG from "./../components/SVG/linkedinSVG";
 
@@ -27,7 +31,7 @@ const HomePage = () => {
 
   // UseState
   const [buttonMove, setButtonMove] = useState(false);
-  //   const [buttonSeeMore, setButtonSeeMore] = useState(false);
+  const [buttonSeeMore, setButtonSeeMore] = useState(false);
 
   // Selection of all buttons with selector ".social"
   const className = "clicked";
@@ -59,14 +63,9 @@ const HomePage = () => {
       <div className="divButtons">
         <GithubSVG />
         <LinkedinSVG />
-        <Button
-          value={"see more"}
-          class={"social moveButton"}
-          alt={"button"}
-          onClick={() => {
-            setButtonSeeMore(true);
-          }}
-        />
+        <Link className={"social moveLink"} to={"/seeMore"}>
+          See more
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import HomePage from "./pages/homePage";
+import SeeMore from "./pages/seeMore";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 const App = () => {
@@ -7,7 +8,8 @@ const App = () => {
     <>
       <BrowserRouter>
         <Switch>
-          <Route path={"/"} component={HomePage} />
+          <Route exact path={"/"} component={HomePage} />
+          <Route path={"/seeMore"} component={SeeMore} />
         </Switch>
       </BrowserRouter>
     </>

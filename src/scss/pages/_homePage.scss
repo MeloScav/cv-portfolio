@@ -8,15 +8,15 @@
   background-color: $background;
 
   .card {
-    width: 25vw;
-    height: 25vw;
-    background: $black;
-    -webkit-border-radius: calculateRem(70);
-    border-radius: calculateRem(70);
+    width: 70vw;
+    height: 70vw;
     background-image: url("./../assets/logoMsBlueW.png");
     background-position: center center;
-    background-size: 20vw;
+    background-size: 60vw;
     background-repeat: no-repeat;
+    border: 4px solid rgb(20, 151, 212);
+    -webkit-border-radius: calculateRem(70);
+    border-radius: calculateRem(70);
     -webkit-box-shadow: 0 calculateRem(10) calculateRem(30) calculateRem(-5)
       rgba(251, 251, 251, 0.3);
     box-shadow: 0 calculateRem(10) calculateRem(30) calculateRem(-5)
@@ -24,14 +24,38 @@
     -webkit-transition: box-shadow 0.5s;
     transition: box-shadow 0.5s;
     will-change: transform;
-    border: 0.5vw solid rgb(20, 151, 212);
     cursor: pointer;
+
+    @media screen and(min-width:425px) {
+      width: 50vw;
+      height: 50vw;
+      background-size: 40vw;
+    }
+    @media screen and(min-width:600px) {
+      width: 40vw;
+      height: 40vw;
+      background-size: 30vw;
+    }
+    @media screen and(min-width:850px) {
+      width: 25vw;
+      height: 25vw;
+      background-size: 20vw;
+    }
+
     &:hover {
       -webkit-box-shadow: 0 calculateRem(30) calculateRem(100) calculateRem(-10)
         rgba(255, 255, 255, 0.4);
       box-shadow: 0 calculateRem(30) calculateRem(100) calculateRem(-10)
         rgba(255, 255, 255, 0.4);
     }
+  }
+
+  /*   BUTTONS   */
+  .divButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 
   .social {
@@ -44,11 +68,13 @@
     border-radius: 100%;
     border-color: transparent;
     display: inline-block;
-
-    font-size: calculateRem(17);
     text-align: center;
-
     cursor: pointer;
+  }
+
+  .github,
+  .linkedin {
+    font-size: calculateRem(17);
   }
   .github:hover path {
     transition: all 0.45s ease-in-out;
@@ -68,46 +94,17 @@
   }
 }
 
-.divButtons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-/*   Button see more : hover animation   */
-.moveButton {
+.moveLink {
   position: relative;
   width: calculateRem(30);
   height: calculateRem(30);
   line-height: calculateRem(50);
-
-  -webkit-perspective: 50em;
-  perspective: 50em;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  &:after {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: calculateRem(2) solid transparent;
-    content: "";
-    z-index: 0;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-  }
-  &:before,
-  &:after {
-    -webkit-transition: all 0.45s ease-in-out;
-    transition: all 0.45s ease-in-out;
-  }
-  &:hover:after,
-  &:active:after,
-  &.hover:after {
-    border-color: transparent $buttonHomePage;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  color: $white;
+  text-decoration: none;
+  font-size: calculateRem(22);
+  font-weight: bold;
+  transition: all 0.45s ease-in-out;
+  &:hover {
+    color: $buttonHomePage;
   }
 }
