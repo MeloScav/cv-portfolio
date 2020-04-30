@@ -1,0 +1,341 @@
+.container {
+  div {
+    position: absolute;
+  }
+
+  //Avatar
+  .me {
+    left: 0;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 160px;
+
+    // Begin head
+    .head {
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      width: $head_width + px;
+      height: $head_height + px;
+      background: $flesh;
+      -webkit-border-radius: 100px;
+      border-radius: 100px;
+      top: $head_top + px;
+      left: 5px;
+      .bangs {
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        height: $bangs_height + px;
+        width: $bangs_width;
+        background: $hair;
+        content: "";
+        position: absolute;
+        -webkit-border-radius: 150px 150px 100% 500px;
+        border-radius: 150px 150px 100% 500px;
+        top: $bangs_top + px;
+        left: 3px;
+      }
+
+      .eyes1 {
+        background: black;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 20px;
+        left: 7px;
+        margin: 10px;
+      }
+
+      .eyes2 {
+        background: black;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        margin: 10px;
+        margin-left: 15px;
+      }
+
+      .mouth {
+        top: 65px;
+        left: 20px;
+        width: 30px;
+        height: 15px;
+        -webkit-border-radius: 0 0 100px 100px;
+        border-radius: 0 0 100px 100px;
+        background: $mouth;
+        overflow: hidden; // allows to hide the tongue in the mouth
+        .tongue {
+          top: 7px;
+          left: 5px;
+          width: 15px;
+          height: 15px;
+          -webkit-border-radius: 100%;
+          border-radius: 100%;
+          background: #f6828c;
+        }
+      }
+    }
+    //End head
+
+    .look-left {
+      &.head {
+        width: ($head_width) + px;
+        left: -10px;
+        .bangs {
+          width: $bangs_width + 12;
+          left: -7px;
+        }
+      }
+    }
+
+    .look-right {
+      &.head {
+        width: ($head_width) + px;
+        left: 15px;
+        .bangs {
+          width: $bangs_width + 12;
+          left: 5px;
+        }
+      }
+    }
+
+    .look-down {
+      &.head {
+        height: $head_height + px;
+        top: $head_top + 10 + px;
+        width: $head_width + px;
+        left: 5px;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        .bangs {
+          height: 70px;
+          top: $bangs_top - 20 + px;
+        }
+      }
+    }
+
+    .look-up {
+      &.head {
+        height: $head_height + px;
+        top: $head_top - 10 + px;
+        width: $head_width + px;
+        left: 5px;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        .bangs {
+          height: 30px;
+          top: $bangs_top + px;
+          -webkit-border-radius: 30px 40px 100% 500px;
+          border-radius: 30px 40px 100% 500px;
+        }
+      }
+    }
+
+    .look-down-right {
+      &.head {
+        top: $head_top + 10 + px;
+        left: 23px;
+        width: $head_width + px;
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        .bangs {
+          height: $bangs_height + 10 + px;
+          width: $bangs_width + 12;
+        }
+      }
+    }
+
+    .look-up-right {
+      &.head {
+        height: $head_height + px;
+        top: $head_top - 10 + px;
+        width: $head_width + px;
+        left: 15px;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+        .bangs {
+          width: $bangs_width + 11;
+          height: 40px;
+          top: $bangs_top + px;
+          left: 5px;
+        }
+      }
+    }
+
+    .look-down-left {
+      &.head {
+        top: $head_top + 10 + px;
+        left: -13px;
+        width: $head_width + px;
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+        -webkit-transform-origin: bottom right;
+        transform-origin: bottom right;
+        .bangs {
+          height: $bangs_height + 10 + px;
+          width: $bangs_width + 20;
+          left: -10px;
+        }
+      }
+    }
+
+    .look-up-left {
+      &.head {
+        height: $head_height + px;
+        top: $head_top - 10 + px;
+        width: $head_width + px;
+        left: -10px;
+        -webkit-transform-origin: bottom center;
+        transform-origin: bottom center;
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+        .bangs {
+          width: $bangs_width + 11;
+          height: 40px;
+          top: $bangs_top + px;
+          left: -10px;
+        }
+      }
+    }
+    .neck {
+      height: 50px;
+      width: 20px;
+      position: absolute;
+      -webkit-border-radius: 0px 0px 100px 100px;
+      border-radius: 0px 0px 100px 100px;
+      background: $flesh;
+      top: 70px;
+      left: 30px;
+      overflow: hidden;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        -webkit-border-radius: 100%;
+        border-radius: 100%;
+        top: -12px;
+        background: $flesh;
+        left: -18px;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+
+      &.look-left:before {
+        left: -38px;
+      }
+      &.look-right:before {
+        left: -5px;
+      }
+      &.look-down:before {
+        top: -5px;
+      }
+      &.look-up:before {
+        top: -22px;
+      }
+
+      &.look-down-right:before {
+        left: -2px;
+        top: -5px;
+      }
+
+      &.look-up-right:before {
+        left: -10px;
+        top: -20px;
+      }
+
+      &.look-down-left:before {
+        left: -38px;
+        top: -5px;
+      }
+
+      &.look-up-left:before {
+        left: -38px;
+        top: -20px;
+      }
+    }
+
+    .hair {
+      -webkit-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+      position: absolute;
+      height: 120px;
+      width: 105px;
+      -webkit-border-radius: 40px 40px 0 0;
+      border-radius: 40px 40px 0 0;
+      background: $hair;
+      left: -12px;
+      top: -12px;
+      overflow: hidden;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 160px;
+        background: $hair;
+        border-radius: 25px;
+        top: 60px;
+        left: 12px;
+      }
+
+      &.look-left {
+        left: -5px;
+        width: 100px;
+      }
+
+      &.look-right {
+        left: -17px;
+        width: 100px;
+      }
+      &.look-down {
+        top: -12px;
+        height: 100px;
+      }
+      &.look-up {
+        top: -8px;
+        height: 120px;
+      }
+      &.look-down-right {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+      }
+
+      &.look-up-right {
+        left: -25px;
+        top: -8px;
+        height: 120px;
+      }
+      &.look-down-left {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+      }
+
+      &.look-up-left {
+        left: -8px;
+        top: -8px;
+        height: 120px;
+      }
+    } //end of hair
+
+    .clothes {
+      background: $tshirt;
+      width: 80px;
+      height: 50px;
+      -webkit-border-radius: 100px 100px 10px 10px;
+      border-radius: 100px 100px 10px 10px;
+      top: 105px;
+      overflow: hidden;
+    }
+  }
+}

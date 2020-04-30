@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 //Components
-// import Avatar from "./avatarComponent";
+import Avatar from "./../components/avatarComponent";
 // import Cv from "./cvComponent";
 // import Portfolio from "./portfolioComponent";
-// import Footer from "./footerComponent";
+import Footer from "./../components/footerComponent";
 
 // Images
 // import Images from "./imagesComponent";
@@ -12,9 +12,9 @@ import React, { useState } from "react";
 // FUNCTION
 const SeeMore = () => {
   // UseState
-  const [buttonCv, setButtonCv] = useState(false);
-  // const [avatar, setAvatar] = React.useState(true);
-  const [buttonPortfolio, setButtonPortfolio] = useState(false);
+  // const [buttonCv, setButtonCv] = useState(false);
+  const [avatar, setAvatar] = useState(true);
+  // const [buttonPortfolio, setButtonPortfolio] = useState(false);
 
   //   if (buttonCv === true) {
   //     return <Cv />;
@@ -27,7 +27,7 @@ const SeeMore = () => {
   return (
     <div className={"containerSeeMore"}>
       {"hello"}
-      {/* <Avatar /> */}
+      <Avatar />
       {/* <Images
         onClick={() => {
           setButtonCv(true);
@@ -36,7 +36,7 @@ const SeeMore = () => {
           setButtonPortfolio(true);
         }}
       /> */}
-      {/* <Footer value={"This site is realized in REACT"} /> */}
+      <Footer value={"This site is realized in REACT"} />
     </div>
   );
 };
