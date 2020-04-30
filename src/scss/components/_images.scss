@@ -5,7 +5,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20%;
+  margin-top: calculateRem(100);
+  padding-top: calculateRem(100);
   width: 95vw;
 }
 
