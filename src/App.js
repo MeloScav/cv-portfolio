@@ -1,6 +1,6 @@
 import React from "react";
 import HomePage from "./pages/homePage";
-import SeeMore from "./pages/seeMore";
+import SeeMore from "./pages/seeMorePage";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 const App = () => {

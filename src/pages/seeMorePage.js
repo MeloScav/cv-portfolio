@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 
 //Components
-import Avatar from "./../components/avatarComponent";
+import Avatar from "../components/avatarComponent";
 // import Cv from "./cvComponent";
 // import Portfolio from "./portfolioComponent";
-import Footer from "./../components/footerComponent";
+import Footer from "../components/footerComponent";
 
 // Images
 // import Images from "./imagesComponent";
 
 // FUNCTION
-const SeeMore = () => {
+const SeeMorePage = () => {
   // UseState
   // const [buttonCv, setButtonCv] = useState(false);
   const [avatar, setAvatar] = useState(true);
@@ -41,4 +41,4 @@ const SeeMore = () => {
   );
 };
 
-export default SeeMore;
+export default SeeMorePage;

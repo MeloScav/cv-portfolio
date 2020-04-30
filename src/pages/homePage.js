@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 
 // Import pages
-import SeeMore from "./seeMore";
+import SeeMore from "./seeMorePage";
 
 // Import components
 import Button from "./../components/buttonComponent";

@@ -1,0 +1,163 @@
+.containerSeeMore {
+  width: 100%;
+  height: 100vh;
+}
+
+// .containerImg {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   flex-wrap: wrap;
+//   position: relative;
+//   margin-top: 20%;
+//   width: 95vw;
+
+//   .cv {
+//     width: auto;
+//     height: auto;
+//     align-self: center;
+//     cursor: pointer;
+//     @media (min-width: 320px) and (max-width: 425px) {
+//       margin-top: 30px;
+//     }
+
+//     .cvImg {
+//       background-color: $purpleLight;
+//       width: 15vw;
+//       height: auto;
+//       -webkit-border-radius: 5px;
+//       border-radius: 5px;
+//       cursor: pointer;
+//     }
+//     .title {
+//       color: white;
+//       text-align: center;
+//       display: none;
+//       @media (min-width: 320px) and (max-width: 768px) {
+//         display: block;
+//       }
+//     }
+//   }
+
+//   .portfolio {
+//     width: auto;
+//     height: auto;
+//     cursor: pointer;
+
+//     align-self: center;
+//     @media (min-width: 320px) and (max-width: 425px) {
+//       margin-top: 30px;
+//     }
+
+//     .portfolioImg {
+//       background-color: $purpleLight;
+//       width: 16vw;
+//       height: 20vw;
+//       -webkit-border-radius: 5px;
+//       border-radius: 5px;
+//       cursor: pointer;
+//     }
+//     .title {
+//       color: white;
+//       text-align: center;
+//       display: none;
+//       @media (min-width: 320px) and (max-width: 768px) {
+//         display: block;
+//       }
+//     }
+//   }
+
+//   .animImg {
+//     font-family: "Raleway", Arial, sans-serif;
+//     position: relative;
+//     overflow: hidden;
+//     margin: 10px;
+//     color: $black;
+//     text-align: center;
+//     img {
+//       opacity: 1;
+//       -webkit-transition: opacity 0.35s;
+//       transition: opacity 0.35s;
+//     }
+//     &:after {
+//       background: $purpleLight;
+//       width: 100%;
+//       height: 100%;
+//       position: absolute;
+//       left: 0;
+//       bottom: 0;
+//       content: "";
+//       opacity: 0.75;
+//       -webkit-transform: skew(-45deg) scaleX(0); // skew : distorsion en étirant
+//       transform: skew(-45deg) scaleX(0);
+//       -webkit-transition: all 0.3s ease-in-out;
+//       transition: all 0.3s ease-in-out;
+//       @media (min-width: 320px) and (max-width: 768px) {
+//         background: none;
+//       }
+//     }
+//     figcaption {
+//       position: absolute;
+//       top: 50%;
+//       left: 0;
+//       -webkit-transform: translateY(-50%);
+//       transform: translateY(-50%);
+//       z-index: 1;
+//       @media (min-width: 320px) and (max-width: 768px) {
+//         display: none;
+//       }
+//     }
+//     h2,
+//     p {
+//       margin: 0;
+//       width: 100%;
+//       opacity: 0;
+//     }
+//     h2 {
+//       padding: 0 30px;
+//       display: inline-block;
+//       font-weight: 350;
+//       font-size: 1.5em;
+//       -webkit-text-transform: uppercase;
+//       text-transform: uppercase;
+//       @media (min-width: 320px) and (max-width: 1125px) {
+//         font-size: 1em;
+//         font-weight: 400;
+//       }
+//     }
+//     p {
+//       padding: 0 50px;
+//       font-size: 0.8em;
+//       font-weight: 500;
+//     }
+
+//     &:hover:after,
+//     .animImg.hover:after {
+//       -webkit-transform: skew(-45deg) scaleX(1);
+//       transform: skew(-45deg) scaleX(1);
+//       -webkit-transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+//       transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+//     }
+//     &:hover figcaption h2,
+//     .animImg.hover figcaption h2,
+//     .animImg:hover figcaption p,
+//     .animImg.hover figcaption p {
+//       -webkit-transition-delay: 0.2s;
+//       transition-delay: 0.2s;
+//     }
+//     &:hover figcaption h2,
+//     .animImg.hover figcaption h2 {
+//       opacity: 1;
+//     }
+//     &:hover figcaption p,
+//     .animImg.hover figcaption p {
+//       opacity: 0.7;
+//     }
+//   }
+//   .animImg * {
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     -webkit-transition: all 0.6s ease;
+//     transition: all 0.6s ease;
+//   }
+// }
