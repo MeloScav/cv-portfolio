@@ -26,7 +26,6 @@ const SeeMorePage = () => {
 
   return (
     <div className={"containerSeeMore"}>
-      {"hello"}
       <Avatar />
       {/* <Images
         onClick={() => {
