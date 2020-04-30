@@ -1,6 +1,12 @@
 .containerSeeMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: calculateRem(30) 0 calculateRem(20) 0;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 3.125rem);
+  background-color: $black;
 }
 
 // .containerImg {
