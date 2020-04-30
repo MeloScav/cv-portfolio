@@ -1,0 +1,63 @@
+// BOX
+.containerBox {
+  padding-top: calculateRem(10);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20%;
+  width: 95vw;
+}
+
+.box {
+  position: relative;
+  margin: calculateRem(10);
+  width: calculateRem(230);
+  height: calculateRem(260);
+  text-decoration: none;
+  border: 3px solid $purpleLight;
+  border-radius: calculateRem(20);
+  overflow: hidden;
+  transition: background-color 0.35s ease-in-out;
+
+  &:hover {
+    .hover-content {
+      background-color: rgba($purpleLight, 0.7);
+      opacity: 1;
+      height: calculateRem(90);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: 0.35s ease-out;
+  }
+
+  .hover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calculateRem(76);
+    color: $black;
+    font-size: large;
+    opacity: 0;
+    transition: all 0.4s ease-out;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
