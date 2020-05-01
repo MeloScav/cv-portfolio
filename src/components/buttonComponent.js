@@ -1,23 +1,13 @@
 import React from "react";
 
-const style = {
-  backgroundColor: "transparent",
-  color: "white",
-};
-
-const Button = (props) => {
+const ButtonComponent = (props) => {
   return (
-    <>
-      <button
-        style={style}
-        type="button"
-        className={props.class}
-        onClick={props.onClick}
-      >
+    <div>
+      <button type="button" className={props.class} onClick={props.onClick}>
         {props.value}
       </button>
-    </>
+    </div>
   );
 };
 
-export default Button;
+export default ButtonComponent;

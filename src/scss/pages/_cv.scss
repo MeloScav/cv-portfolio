@@ -1,0 +1,636 @@
+.containerCv {
+  background-color: $black;
+  width: 100%;
+  min-height: 100vh;
+
+  .buttonLang {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-right: 10px;
+    .buttonLanguage {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        border-color: $green;
+      }
+    }
+  }
+
+  .blockHead {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    background-color: $blue;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    h3 {
+      padding-bottom: 5px;
+    }
+  }
+
+  /*  About  */
+  .blocAbout {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .picture {
+      width: 150px;
+      height: 179px;
+      border: 3px solid $blue;
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+      align-items: center;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      .imgMe {
+        width: 130px;
+        height: 174px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+
+    .about {
+      border: 3px solid $blue;
+      width: 76%;
+      height: auto;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      margin-left: 10px;
+      h2 {
+        text-align: center;
+        color: rgb(240, 101, 67);
+        font-weight: bold;
+      }
+      p {
+        color: #e1ece4;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  /*  Skills  */
+  .blocSkills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #f5f749;
+      font-weight: bold;
+    }
+    .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      color: rgb(241, 235, 235);
+      margin-bottom: 1rem;
+
+      .skillTop,
+      .skillMiddle,
+      .skillBasic,
+      .bonneConnaissance,
+      .connaissanceMoyenne,
+      .connaissanceBasique {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 30px;
+        margin-right: 30px;
+        p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  /*  Formation  */
+  .blocTraining {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #d7263d;
+    }
+    .trainingBecode {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      margin-top: 15px;
+      .titleTrainingBecode {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+        color: $yellow;
+      }
+      .dateTrainingBecode {
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingBecode {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+        color: $yellow;
+      }
+    }
+    .fleronTraining {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      .titleTrainingFleron {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .dateTrainingFleron {
+        width: 110px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingFleron {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+    .uniV {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      .titleTrainingUniV {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .dateTrainingUniV {
+        width: 160px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingUniV {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+    .uniPsy {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      .titleTrainingUniPsy {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .dateTrainingUniPsy {
+        width: 210px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingUniPsy {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+    .uniSc {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      .titleTrainingUniSc {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .dateTrainingUniSc {
+        width: 250px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingUniSc {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+    .saintJacques {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      color: rgb(241, 228, 228);
+      width: 80%;
+      .titleTrainingSJ {
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .dateTrainingSJ {
+        width: 290px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #d7263d;
+        font-size: 18px;
+        font-weight: bold;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        text-align: center;
+        @media (max-width: 1024px) {
+          width: 120px;
+        }
+      }
+      .descriptionTrainingSJ {
+        width: 34%;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
+
+  /*  Experiences  */
+  .blocXp {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      color: #c2aff0;
+    }
+
+    .stageWad {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $stageWad;
+      width: 80%;
+      margin-top: 15px;
+      .xpStageWad {
+        font-style: italic;
+      }
+      .xpStageWad,
+      .dateStageWad {
+        width: 40%;
+        text-align: center;
+      }
+      .dateStageWad {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+
+    .hackathonW {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $hackathon;
+      width: 80%;
+      margin-top: 15px;
+      .xpHackathonW {
+        font-style: italic;
+      }
+      .xpHackathonW,
+      .dateHackatonW {
+        width: 40%;
+        text-align: center;
+      }
+      .dateHackatonW {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .becode {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $becode;
+      width: 80%;
+      margin-top: 15px;
+      .xpBecode {
+        font-style: italic;
+      }
+      .xpBecode,
+      .dateBecode {
+        width: 40%;
+        text-align: center;
+      }
+      .dateBecode {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .job {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $jobP;
+      width: 80%;
+      margin-top: 15px;
+      .dateJob {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .dateJob,
+      .xpJob {
+        width: 40%;
+        text-align: center;
+      }
+      .xpJob {
+        font-style: italic;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .stagevete2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $stageV2;
+      width: 80%;
+      margin-top: 15px;
+      .xpVete2 {
+        font-style: italic;
+      }
+      .xpVete2,
+      .dateVete2 {
+        width: 40%;
+        text-align: center;
+      }
+      .dateVete2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .stageVete1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $stageV1;
+      width: 80%;
+      margin-top: 15px;
+      .dateVete1 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .dateVete1,
+      .xpVete1 {
+        width: 40%;
+        text-align: center;
+      }
+      .xpVete1 {
+        font-style: italic;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .jobStudent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $jobStudent;
+      width: 80%;
+      margin-top: 15px;
+      .xpJobStudent {
+        font-style: italic;
+      }
+      .xpJobStudent,
+      .dateJobStudent {
+        width: 40%;
+        text-align: center;
+      }
+      .dateJobStudent {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+    .jobStudentRetho {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      color: $retho;
+      width: 80%;
+      margin-top: 15px;
+      .dateJobStudentRetho {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .dateJobStudentRetho,
+      .xpJobStudentRetho {
+        width: 40%;
+        text-align: center;
+      }
+      .xpJobStudentRetho {
+        font-style: italic;
+      }
+      .separator {
+        width: 15px;
+        height: 15px;
+        background-color: #c2aff0;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  /*  DOWNLOAD  */
+  .download {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    button {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        border-color: $yellow;
+      }
+    }
+  }
+
+  /*  Button RETURN  */
+  .buttons {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    .buttonReturn {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        border-color: $blue;
+      }
+    }
+    .buttonPortfolio {
+      background-color: transparent;
+      border: 2px solid $white;
+      color: $white;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        border-color: $pink;
+      }
+    }
+  }
+}
