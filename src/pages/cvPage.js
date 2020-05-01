@@ -1,21 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
 // Components
-// import Footer from "./../components/footerComponent";
-// import Button from "./../components/buttonComponent";
-// import SeeMore from "./seeMoreComponent";
-// import Portfolio from "./portfolioComponent";
 import CvFr from "./../components/cvFrComponent";
 import CvEn from "./../components/cvEnComponent";
-
-// Images
-// import Me from "./../assets/photoCV.jpg";
 
 const CvPage = () => {
   let ref = useRef();
   // UseState
-  // const [buttonReturn, setButtonReturn] = useState(false);
-  // const [buttonPortfolio, setButtonPortfolio] = useState(false);
   const [buttonLanguage, setButtonLanguage] = useState(false);
 
   // UseEffect CANVAS
@@ -54,14 +45,6 @@ const CvPage = () => {
       drawCanvas("basicKnowledge", 40, "Basic", "knowledge");
     }
   }, [buttonLanguage]);
-
-  // if (buttonReturn === true) {
-  //   return <SeeMore />;
-  // }
-
-  // if (buttonPortfolio === true) {
-  //   return <Portfolio />;
-  // }
 
   /*  FRANCAIS  */
   if (buttonLanguage === true) {
