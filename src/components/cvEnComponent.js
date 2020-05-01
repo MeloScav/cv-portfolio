@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Components
 import Footer from "./../components/footerComponent";
@@ -10,7 +11,7 @@ import Me from "./../assets/photoCV.jpg";
 const CvEnComponent = (props) => {
   return (
     <div className={"containerCv"}>
-      <div className={"buttonLang"}>
+      <div className={"containerButtonLang"}>
         <Button
           class="buttonLanguage"
           onClick={props.onClickLanguage}
@@ -207,21 +208,14 @@ const CvEnComponent = (props) => {
           <button type={"button"}>{"Download the CV in pdf"} </button>
         </a>
       </div>
-      <div className={"buttons"}>
-        <Button
-          class="buttonReturn"
-          onClick={() => {
-            setButtonReturn(true);
-          }}
-          value={"Return"}
-        />
-        <Button
-          class="buttonPortfolio"
-          onClick={() => {
-            setButtonPortfolio(true);
-          }}
-          value={"Portfolio"}
-        />
+
+      <div className={"containerLink"}>
+        <Link className={"buttonReturn"} to={"/seeMore"}>
+          {"Return"}
+        </Link>
+        <Link className={"buttonPortfolio"} to={"/portfolio"}>
+          {"Portfolio"}
+        </Link>
       </div>
       <Footer value={"This site is realized in REACT"} />
     </div>

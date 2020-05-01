@@ -10,7 +10,7 @@ import Me from "./../assets/photoCV.jpg";
 const CvFrComponent = (props) => {
   return (
     <div className={"containerCv"}>
-      <div className={"buttonLang"}>
+      <div className={"containerButtonLang"}>
         <Button
           class="buttonLanguage"
           onClick={props.onClickLanguage}
