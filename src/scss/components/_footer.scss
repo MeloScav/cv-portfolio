@@ -1,10 +1,11 @@
 .footerContainer {
-  width: 90%;
+  padding: calculateRem(20) 0 calculateRem(20) 0;
+  width: 100%;
   .footerContent {
-    color: $white;
+    margin: 0 auto;
     width: 80%;
     text-align: center;
-    border-top: 1px solid rgba(240, 226, 223, 0.5);
-    margin: 0 auto;
+    color: $white;
+    border-top: 1px solid $borderFooter;
   }
 }
