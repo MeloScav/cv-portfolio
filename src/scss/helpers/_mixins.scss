@@ -1,0 +1,19 @@
+// BORDER-RADIUS
+@mixin borderRadius($number) {
+  -webkit-border-radius: calculateRem($number);
+  border-radius: calculateRem($number);
+}
+
+@mixin flexCenter($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($duration, $timingFunction, $property: all) {
+  -webkit-transition: $property $duration $timingFunction;
+  -o-transition: $property $duration $timingFunction;
+  transition: $property $duration $timingFunction;
+}

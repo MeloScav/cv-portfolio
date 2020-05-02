@@ -139,61 +139,59 @@ const CvFrComponent = (props) => {
         <h2>{"Expérience"}</h2>
 
         <div className={"stageWad"}>
-          <div className={"xpStageWad"}>{"Stage chez WebaDev"}</div>
+          <div className={"xp"}>{"Stage chez WebaDev"}</div>
           <div className={"separator"}></div>
-          <div className={"dateStageWad"}>{"Décembre 2019 - Février 2020"}</div>
+          <div className={"date"}>{"Décembre 2019 - Février 2020"}</div>
         </div>
 
         <div className={"hackathonW"}>
-          <div className={"dateHackatonW"}>2019</div>
+          <div className={"date"}>2019</div>
           <div className={"separator"}></div>
-          <div className={"xpHackathonW"}>{"Hackathon WeCargo"}</div>
+          <div className={"xp"}>{"Hackathon WeCargo"}</div>
         </div>
 
         <div className={"becode"}>
-          <div className={"xpBecode"}>
+          <div className={"xp"}>
             {
               "Création de site web, utilisation de Git/Github,apprentissage autodidacte de différents langages."
             }
           </div>
           <div className={"separator"}></div>
-          <div className={"dateBecode"}>2019</div>
+          <div className={"date"}>2019</div>
         </div>
 
         <div className={"job"}>
-          <div className={"dateJob"}>2018</div>
+          <div className={"date"}>2018</div>
           <div className={"separator"}></div>
-          <div className={"xpJob"}>
+          <div className={"xp"}>
             {"Cdd caissier/réassortisseur à Primark Liège"}
           </div>
         </div>
         <div className={"stagevete2"}>
-          <div className={"xpVete2"}>
+          <div className={"xp"}>
             {"Stage de fin d'étude au centre vétérinaire Triovet"}
           </div>
           <div className={"separator"}></div>
-          <div className={"dateVete2"}>2017</div>
+          <div className={"date"}>2017</div>
         </div>
         <div className={"stageVete1"}>
-          <div className={"dateVete1"}>{"2016"}</div>
+          <div className={"date"}>{"2016"}</div>
           <div className={"separator"}></div>
-          <div className={"xpVete1"}>
+          <div className={"xp"}>
             {"Stage au cabinet vétérinaire du Dr Catherine Bande"}
           </div>
         </div>
         <div className={"jobStudent"}>
-          <div className={"xpJobStudent"}>
+          <div className={"xp"}>
             {"Agent d'accueil au Carrefour de Fléron (Job étudiant)"}
           </div>
           <div className={"separator"}></div>
-          <div className={"dateJobStudent"}>{"2013"}</div>
+          <div className={"date"}>{"2013"}</div>
         </div>
         <div className={"jobStudentRetho"}>
-          <div className={"dateJobStudentRetho"}>{"2012"}</div>
+          <div className={"date"}>{"2012"}</div>
           <div className={"separator"}></div>
-          <div className={"xpJobStudentRetho"}>
-            {"Assistante primaire à George Mignon"}
-          </div>
+          <div className={"xp"}>{"Assistante primaire à George Mignon"}</div>
         </div>
       </div>
       <div className={"download"}>

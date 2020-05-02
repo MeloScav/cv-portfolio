@@ -8,14 +8,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: calculateRem(10);
     .buttonLanguage {
-      padding: 2px 10px 2px 10px;
-      background-color: transparent;
-      border: 2px solid $white;
-      color: $white;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
+      @extend %buttons;
+      @include borderRadius(5);
       cursor: pointer;
       &:hover {
         border-color: $green;
@@ -23,42 +19,34 @@
     }
   }
 
+  /*  HEADER  */
   .blockHead {
     margin: 0 auto;
     width: 90%;
     height: auto;
     background-color: $blue;
     text-align: center;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    @include borderRadius(10);
     h3 {
-      padding-bottom: 5px;
+      padding-bottom: calculateRem(5);
     }
   }
 
   /*  About  */
   .blocAbout {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter();
 
     .picture {
-      width: 150px;
-      height: 179px;
+      margin-bottom: calculateRem(5);
+      width: calculateRem(150);
+      height: calculateRem(179);
       border: 3px solid $blue;
-      display: flex;
-      flex-direction: center;
-      justify-content: center;
-      align-items: center;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      margin-bottom: 5px;
+      @include flexCenter();
+      @include borderRadius(5);
       .imgMe {
-        width: 130px;
-        height: 174px;
+        width: calculateRem(130);
+        height: calculateRem(174);
         -webkit-border-radius: 50%;
         border-radius: 50%;
       }
@@ -68,9 +56,8 @@
       border: 3px solid $blue;
       width: 76%;
       height: auto;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      margin-left: 10px;
+      @include borderRadius(5);
+      margin-left: calculateRem(10);
       h2 {
         text-align: center;
         color: rgb(240, 101, 67);
@@ -78,8 +65,8 @@
       }
       p {
         color: #e1ece4;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: calculateRem(5);
+        padding-right: calculateRem(5);
       }
     }
   }
@@ -87,20 +74,13 @@
   /*  Skills  */
   .blocSkills {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter(column);
     h2 {
       color: #f5f749;
       font-weight: bold;
     }
     .skills {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+      @include flexCenter();
       color: rgb(241, 235, 235);
       margin-bottom: 1rem;
 
@@ -110,13 +90,10 @@
       .bonneConnaissance,
       .connaissanceMoyenne,
       .connaissanceBasique {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+        @include flexCenter(column);
         margin-top: 1rem;
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: calculateRem(30);
+        margin-right: calculateRem(30);
         p {
           margin-top: 0;
         }
@@ -127,477 +104,219 @@
   /*  Formation  */
   .blocTraining {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter(column);
+
     h2 {
       color: #d7263d;
     }
-    .trainingBecode {
+
+    .trainingBecode,
+    .fleronTraining,
+    .uniV,
+    .uniPsy,
+    .uniSc,
+    .saintJacques {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      margin-top: calculateRem(15);
       color: rgb(241, 228, 228);
       width: 80%;
-      margin-top: 15px;
+    }
+
+    .titleTrainingBecode,
+    .titleTrainingFleron,
+    .titleTrainingUniV,
+    .titleTrainingUniPsy,
+    .titleTrainingUniSc,
+    .titleTrainingSJ {
+      width: 30%;
+      text-align: center;
+      font-size: calculateRem(17);
+      font-weight: bold;
+    }
+
+    .dateTrainingBecode,
+    .dateTrainingFleron,
+    .dateTrainingUniV,
+    .dateTrainingUniPsy,
+    .dateTrainingUniSc,
+    .dateTrainingSJ {
+      height: calculateRem(30);
+      line-height: calculateRem(30);
+      background-color: #d7263d;
+      font-size: calculateRem(18);
+      font-weight: bold;
+      @include borderRadius(20);
+      text-align: center;
+    }
+
+    .descriptionTrainingBecode,
+    .descriptionTrainingFleron,
+    .descriptionTrainingUniV,
+    .descriptionTrainingUniPsy,
+    .descriptionTrainingUniSc,
+    .descriptionTrainingSJ {
+      width: 34%;
+      text-align: center;
+      font-style: italic;
+    }
+
+    // BECODE
+    .trainingBecode {
       .titleTrainingBecode {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
         color: $yellow;
       }
       .dateTrainingBecode {
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(60);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
       }
       .descriptionTrainingBecode {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
         color: $yellow;
       }
     }
+
+    // FLERON
     .fleronTraining {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: rgb(241, 228, 228);
-      width: 80%;
-      .titleTrainingFleron {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
-      }
       .dateTrainingFleron {
-        width: 110px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(110);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
       }
-      .descriptionTrainingFleron {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
-      }
     }
+
+    // UNIV VETE
     .uniV {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: rgb(241, 228, 228);
-      width: 80%;
-      .titleTrainingUniV {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
-      }
       .dateTrainingUniV {
-        width: 160px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(160);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
       }
-      .descriptionTrainingUniV {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
-      }
     }
+
+    // UNIV PSY
     .uniPsy {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: rgb(241, 228, 228);
-      width: 80%;
-      .titleTrainingUniPsy {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
-      }
       .dateTrainingUniPsy {
-        width: 210px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(210);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
       }
-      .descriptionTrainingUniPsy {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
-      }
     }
+
+    // UNIV SCIENCES H&S
     .uniSc {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: rgb(241, 228, 228);
-      width: 80%;
-      .titleTrainingUniSc {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
-      }
       .dateTrainingUniSc {
-        width: 250px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(250);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
-      }
-      .descriptionTrainingUniSc {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
       }
     }
+
+    // SAINT-JACQUES
     .saintJacques {
-      margin-top: 15px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      color: rgb(241, 228, 228);
-      width: 80%;
-      .titleTrainingSJ {
-        width: 30%;
-        text-align: center;
-        font-size: 17px;
-        font-weight: bold;
-      }
       .dateTrainingSJ {
-        width: 290px;
-        height: 30px;
-        line-height: 30px;
-        background-color: #d7263d;
-        font-size: 18px;
-        font-weight: bold;
-        -webkit-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
+        width: calculateRem(290);
         @media (max-width: 1024px) {
-          width: 120px;
+          width: calculateRem(120);
         }
-      }
-      .descriptionTrainingSJ {
-        width: 34%;
-        text-align: center;
-        font-style: italic;
       }
     }
   }
 
   /*  Experiences  */
   .blocXp {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: calculateRem(20);
+    margin-bottom: calculateRem(25);
     position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    @include flexCenter(column);
+
     h2 {
       color: #c2aff0;
     }
 
-    .stageWad {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $stageWad;
-      width: 80%;
-      margin-top: 15px;
-      .xpStageWad {
-        font-style: italic;
-      }
-      .xpStageWad,
-      .dateStageWad {
-        width: 40%;
-        text-align: center;
-      }
-      .dateStageWad {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
+    .separator {
+      width: calculateRem(15);
+      height: calculateRem(15);
+      background-color: #c2aff0;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
     }
 
-    .hackathonW {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $hackathon;
-      width: 80%;
-      margin-top: 15px;
-      .xpHackathonW {
-        font-style: italic;
-      }
-      .xpHackathonW,
-      .dateHackatonW {
-        width: 40%;
-        text-align: center;
-      }
-      .dateHackatonW {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
-    .becode {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $becode;
-      width: 80%;
-      margin-top: 15px;
-      .xpBecode {
-        font-style: italic;
-      }
-      .xpBecode,
-      .dateBecode {
-        width: 40%;
-        text-align: center;
-      }
-      .dateBecode {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
-    .job {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $jobP;
-      width: 80%;
-      margin-top: 15px;
-      .dateJob {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .dateJob,
-      .xpJob {
-        width: 40%;
-        text-align: center;
-      }
-      .xpJob {
-        font-style: italic;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
-    .stagevete2 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $stageV2;
-      width: 80%;
-      margin-top: 15px;
-      .xpVete2 {
-        font-style: italic;
-      }
-      .xpVete2,
-      .dateVete2 {
-        width: 40%;
-        text-align: center;
-      }
-      .dateVete2 {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
-    .stageVete1 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $stageV1;
-      width: 80%;
-      margin-top: 15px;
-      .dateVete1 {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .dateVete1,
-      .xpVete1 {
-        width: 40%;
-        text-align: center;
-      }
-      .xpVete1 {
-        font-style: italic;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
-    .jobStudent {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      color: $jobStudent;
-      width: 80%;
-      margin-top: 15px;
-      .xpJobStudent {
-        font-style: italic;
-      }
-      .xpJobStudent,
-      .dateJobStudent {
-        width: 40%;
-        text-align: center;
-      }
-      .dateJobStudent {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
-    }
+    .stageWad,
+    .hackathonW,
+    .becode,
+    .job,
+    .stagevete2,
+    .stageVete1,
+    .jobStudent,
     .jobStudentRetho {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      color: $retho;
       width: 80%;
-      margin-top: 15px;
-      .dateJobStudentRetho {
-        font-size: 20px;
-        font-weight: bold;
-      }
-      .dateJobStudentRetho,
-      .xpJobStudentRetho {
-        width: 40%;
-        text-align: center;
-      }
-      .xpJobStudentRetho {
-        font-style: italic;
-      }
-      .separator {
-        width: 15px;
-        height: 15px;
-        background-color: #c2aff0;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-      }
+      margin-top: calculateRem(15);
+    }
+
+    .xp {
+      font-style: italic;
+    }
+    .xp,
+    .date {
+      width: 40%;
+      text-align: center;
+    }
+    .date {
+      font-size: calculateRem(20);
+      font-weight: bold;
+    }
+
+    .stageWad {
+      color: $stageWad;
+    }
+    .hackathonW {
+      color: $hackathon;
+    }
+    .becode {
+      color: $becode;
+    }
+    .job {
+      color: $jobP;
+    }
+    .stagevete2 {
+      color: $stageV2;
+    }
+    .stageVete1 {
+      color: $stageV1;
+    }
+    .jobStudent {
+      color: $jobStudent;
+    }
+    .jobStudentRetho {
+      color: $retho;
     }
   }
 
   /*  DOWNLOAD  */
   .download {
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin: calculateRem(10) auto;
+    @include flexCenter();
     width: 90%;
     button {
-      padding: 2px 10px 2px 10px;
+      padding: calculateRem(2) calculateRem(10) calculateRem(2) calculateRem(10);
       background-color: transparent;
       border: 2px solid $white;
       color: $white;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
+      @include borderRadius(5);
+      @include transition(0.35s, ease-in-out);
       cursor: pointer;
       &:hover {
         border-color: $yellow;
@@ -614,27 +333,19 @@
     width: 90%;
 
     .buttonReturn {
-      padding: 2px 10px 2px 10px;
-      background-color: transparent;
-      border: 2px solid $white;
-      color: $white;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      text-decoration: none;
+      @extend %buttons;
+      @include borderRadius(5);
+      @include transition(0.35s, ease-in-out);
       cursor: pointer;
       &:hover {
         border-color: $blue;
       }
     }
     .buttonPortfolio {
-      padding: 2px 10px 2px 10px;
-      background-color: transparent;
-      border: 2px solid $white;
-      color: $white;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      text-decoration: none;
+      @extend %buttons;
+      @include borderRadius(5);
       cursor: pointer;
+      @include transition(0.35s, ease-in-out);
       &:hover {
         border-color: $pink;
       }
