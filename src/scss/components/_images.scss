@@ -16,14 +16,14 @@
   width: calculateRem(230);
   height: calculateRem(260);
   text-decoration: none;
-  border: 3px solid $purpleLight;
+  border: 3px solid $secondary;
   border-radius: calculateRem(20);
   overflow: hidden;
   transition: background-color 0.35s ease-in-out;
 
   &:hover {
     .hover-content {
-      background-color: rgba($purpleLight, 0.7);
+      background-color: rgba($secondary, 0.7);
       opacity: 1;
       height: calculateRem(90);
     }

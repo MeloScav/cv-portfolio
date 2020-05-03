@@ -24,7 +24,7 @@
     margin: 0 auto;
     width: 90%;
     height: auto;
-    background-color: $blue;
+    background-color: $primary;
     text-align: center;
     @include borderRadius(10);
     h3 {
@@ -41,7 +41,7 @@
       margin-bottom: calculateRem(5);
       width: calculateRem(150);
       height: calculateRem(179);
-      border: 3px solid $blue;
+      border: 3px solid $primary;
       @include flexCenter();
       @include borderRadius(5);
       .imgMe {
@@ -53,7 +53,7 @@
     }
 
     .about {
-      border: 3px solid $blue;
+      border: 3px solid $primary;
       width: 76%;
       height: auto;
       @include borderRadius(5);
@@ -335,7 +335,7 @@
     .buttonReturn {
       @extend %buttons;
       &:hover {
-        border-color: $blue;
+        border-color: $primary;
       }
     }
     .buttonPortfolio {
