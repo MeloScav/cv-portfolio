@@ -29,7 +29,3 @@ const imagesComponent = () => {
 };
 
 export default imagesComponent;
-
-<Link className={"box"} to={"/seeMore"}>
-  See more
-</Link>;
