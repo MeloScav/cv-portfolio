@@ -73,6 +73,8 @@ const CvFrComponent = (props) => {
             <p>{"Angular"}</p>
             <p>{"Canvas"}</p>
             <p>{"Git/Github"}</p>
+            <p>{"Bootstrap"}</p>
+            <p>{"Redux"}</p>
           </div>
           <div className={"skillBasic"}>
             <canvas
