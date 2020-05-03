@@ -17,3 +17,8 @@
   -o-transition: $property $duration $timingFunction;
   transition: $property $duration $timingFunction;
 }
+
+@mixin objectFit($property: cover) {
+  -o-object-fit: $property;
+  object-fit: $property;
+}

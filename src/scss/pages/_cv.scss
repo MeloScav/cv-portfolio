@@ -334,18 +334,12 @@
 
     .buttonReturn {
       @extend %buttons;
-      @include borderRadius(5);
-      @include transition(0.35s, ease-in-out);
-      cursor: pointer;
       &:hover {
         border-color: $blue;
       }
     }
     .buttonPortfolio {
       @extend %buttons;
-      @include borderRadius(5);
-      cursor: pointer;
-      @include transition(0.35s, ease-in-out);
       &:hover {
         border-color: $pink;
       }
