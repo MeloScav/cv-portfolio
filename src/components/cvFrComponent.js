@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Components
 import Footer from "./../components/footerComponent";
@@ -202,21 +203,13 @@ const CvFrComponent = (props) => {
           <button type={"button"}>{"Télécharger le CV en pdf"} </button>
         </a>
       </div>
-      <div className={"buttons"}>
-        <Button
-          class="buttonReturn"
-          onClick={() => {
-            setButtonReturn(true);
-          }}
-          value={"Retour"}
-        />
-        <Button
-          class="buttonPortfolio"
-          onClick={() => {
-            setButtonPortfolio(true);
-          }}
-          value={"Portfolio"}
-        />
+      <div className={"containerLink"}>
+        <Link className={"buttonReturn"} to={"/seeMore"}>
+          {"Return"}
+        </Link>
+        <Link className={"buttonPortfolio"} to={"/portfolio"}>
+          {"Portfolio"}
+        </Link>
       </div>
       <Footer value={"Ce site est réalisé en REACT"} />
     </div>
