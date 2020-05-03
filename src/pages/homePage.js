@@ -2,12 +2,6 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 
-// Import pages
-import SeeMore from "./seeMorePage";
-
-// Import components
-import Button from "./../components/buttonComponent";
-
 // SVG
 import GithubSVG from "./../components/SVG/githubSVG";
 import LinkedinSVG from "./../components/SVG/linkedinSVG";
@@ -31,7 +25,6 @@ const HomePage = () => {
 
   // UseState
   const [buttonMove, setButtonMove] = useState(false);
-  const [buttonSeeMore, setButtonSeeMore] = useState(false);
 
   // Selection of all buttons with selector ".social"
   const className = "clicked";
@@ -42,11 +35,6 @@ const HomePage = () => {
     }
     return setButtonMove(false);
   }
-
-  // Button see more
-  //   if (buttonSeeMore === true) {
-  //     return <SeeMore />;
-  //   }
 
   return (
     <div className="block">
