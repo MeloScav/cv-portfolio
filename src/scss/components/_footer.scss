@@ -1,11 +1,11 @@
 .footerContainer {
-  padding: calculateRem(20) 0 calculateRem(20) 0;
+  padding: calculateRem(20) 0 calculateRem(10) 0;
   width: 100%;
   .footerContent {
     margin: 0 auto;
     width: 80%;
     text-align: center;
-    color: $white;
-    border-top: 1px solid $borderFooter;
+    color: $primary;
+    border-top: 1px solid $primary;
   }
 }
