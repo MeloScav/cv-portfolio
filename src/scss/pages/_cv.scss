@@ -308,6 +308,7 @@
   /*  DOWNLOAD  */
   .download {
     margin: calculateRem(10) auto;
+    padding-top: calculateRem(30);
     @include flexCenter();
     width: 90%;
     button {
@@ -327,6 +328,7 @@
   /*  Buttons */
   .containerLink {
     margin: 0 auto;
+    padding-bottom: calculateRem(30);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
