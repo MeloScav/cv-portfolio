@@ -12,6 +12,7 @@ import TrouvKach from "./../assets/trouvkach.png";
 import AchilleEtMargaux from "./../assets/achille-et-margaux.png";
 import GregorPotter from "./../assets/gregor-potter.png";
 import ClimActes from "./../assets/climactes.png";
+import Pomodoro from "./../assets/pomodoro.jpg";
 
 const PortfolioPage = () => {
   return (
@@ -19,6 +20,18 @@ const PortfolioPage = () => {
       <h1>{"Portfolio"}</h1>
 
       <div className={"containerImg"}>
+        <a className={"boxImg"} href={"https://pomodoro-ms.netlify.app/"}>
+          <img src={Pomodoro} alt="Pomodoro" />
+          <div className={"hover-portfolio"}>
+            <h2>{"Pomodoro"}</h2>
+            <p>
+              {
+                "A pomodoro made with React. It allows you to manage working time and break time."
+              }
+            </p>
+          </div>
+        </a>
+
         <a className={"boxImg"} href={"https://www.climactes.org/"}>
           <img src={ClimActes} alt="ClimActes" />
           <div className={"hover-portfolio"}>
