@@ -78,11 +78,11 @@
   }
   .github:hover path {
     transition: all 0.45s ease-in-out;
-    fill: $buttonHomePage;
+    fill: $secondary;
   }
   .linkedin:hover path {
     transition: all 0.45s ease-in-out;
-    fill: $buttonHomePage;
+    fill: $secondary;
   }
 
   .clicked {
@@ -105,6 +105,6 @@
   font-weight: bold;
   transition: all 0.45s ease-in-out;
   &:hover {
-    color: $buttonHomePage;
+    color: $secondary;
   }
 }
