@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 import Footer from "./../components/footerComponent";
 
 // Images
-import TicTacToe from "./../assets/tic-tac-toe.png";
-import CasseBriques from "./../assets/casse-briques.png";
-import TrouvKach from "./../assets/trouvkach.png";
-import AchilleEtMargaux from "./../assets/achille-et-margaux.png";
-import GregorPotter from "./../assets/gregor-potter.png";
-import ClimActes from "./../assets/climactes.png";
+import TicTacToe from "./../assets/tic-tac-toe.jpg";
+import CasseBriques from "./../assets/casse-briques.jpg";
+import TrouvKach from "./../assets/trouvkach.jpg";
+import AchilleEtMargaux from "./../assets/achille-et-margaux.jpg";
+import GregorPotter from "./../assets/gregor-potter.jpg";
+import ClimActes from "./../assets/climactes.jpg";
 import Coach2 from "./../assets/coach2.jpg";
 import BureauAndre from "./../assets/bureau-andre.jpg";
 import Ghjpsy from "./../assets/ghjpsy.jpg";
