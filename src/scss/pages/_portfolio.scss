@@ -22,7 +22,7 @@
   position: relative;
   margin: calculateRem(10);
   width: calculateRem(280);
-  height: calculateRem(280);
+  height: calculateRem(240);
   text-decoration: none;
   border: 3px solid $secondary;
   @include borderRadius(20);
@@ -58,6 +58,7 @@
     h2 {
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
     p {

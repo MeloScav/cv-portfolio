@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 // Components
 import Footer from "./../components/footerComponent";
-import Button from "./../components/buttonComponent";
 
 // Images
 import TicTacToe from "./../assets/tic-tac-toe.png";
@@ -12,6 +11,9 @@ import TrouvKach from "./../assets/trouvkach.png";
 import AchilleEtMargaux from "./../assets/achille-et-margaux.png";
 import GregorPotter from "./../assets/gregor-potter.png";
 import ClimActes from "./../assets/climactes.png";
+import Coach2 from "./../assets/coach2.jpg";
+import BureauAndre from "./../assets/bureau-andre.jpg";
+import Ghjpsy from "./../assets/ghjpsy.jpg";
 import Pomodoro from "./../assets/pomodoro.jpg";
 
 const PortfolioPage = () => {
@@ -27,6 +29,42 @@ const PortfolioPage = () => {
             <p>
               {
                 "A pomodoro made with React. It allows you to manage working time and break time."
+              }
+            </p>
+          </div>
+        </a>
+
+        <a className={"boxImg"} href={"https://www.ghjpsy.org/"}>
+          <img src={Ghjpsy} alt="Ghjpsy" />
+          <div className={"hover-portfolio"}>
+            <h2>{"Ghjpsy"}</h2>
+            <p>
+              {
+                "Participation in the development of a website for a group of psychiatric day hospitals (internship)"
+              }
+            </p>
+          </div>
+        </a>
+
+        <a className={"boxImg"} href={"https://www.bureau-andre.be/"}>
+          <img src={BureauAndre} alt="Bureau André" />
+          <div className={"hover-portfolio"}>
+            <h2>{"Bureau André"}</h2>
+            <p>
+              {
+                "Participation in the development of a website for the ANDRE Studies and Expertise office (internship)"
+              }
+            </p>
+          </div>
+        </a>
+
+        <a className={"boxImg"} href={"https://www.coach2.be/"}>
+          <img src={Coach2} alt="Coach2" />
+          <div className={"hover-portfolio"}>
+            <h2>{"Coach2"}</h2>
+            <p>
+              {
+                "Participation in the development of a website for Coach2, Business & Human development (internship)"
               }
             </p>
           </div>
