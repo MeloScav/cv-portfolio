@@ -58,7 +58,7 @@ const CvFrComponent = (props) => {
             <p>{"Html/Html5"}</p>
             <p>{"Css/Css3"}</p>
             <p>{"Scss"}</p>
-            <p>{"Javascrip"}</p>
+            <p>{"Javascript"}</p>
             <p>{"React"}</p>
           </div>
           <div className={"skillMiddle"}>
