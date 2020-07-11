@@ -57,7 +57,7 @@ const CvFrComponent = (props) => {
             </canvas>
             <p>{"Html/Html5"}</p>
             <p>{"Css/Css3"}</p>
-            <p>{"Sass"}</p>
+            <p>{"Scss"}</p>
             <p>{"Javascrip"}</p>
             <p>{"React"}</p>
           </div>
