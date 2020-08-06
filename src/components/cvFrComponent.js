@@ -88,6 +88,8 @@ const CvFrComponent = (props) => {
             <p>{"Wordpress"}</p>
             <p>{"Parcel"}</p>
             <p>{"Webpack"}</p>
+            <p>{"Balsamiq"}</p>
+            <p>{"Figma"}</p>
           </div>
         </div>
       </div>
