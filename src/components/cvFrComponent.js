@@ -215,7 +215,7 @@ const CvFrComponent = (props) => {
           {"Portfolio"}
         </Link>
       </div>
-      <Footer value={"Ce site est réalisé en REACT"} />
+      <Footer value={"Ce site a été réalisé avec REACT"} />
     </div>
   );
 };
