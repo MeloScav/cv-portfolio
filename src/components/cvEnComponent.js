@@ -214,7 +214,7 @@ const CvEnComponent = (props) => {
           {"Portfolio"}
         </Link>
       </div>
-      <Footer value={"This site is realized in REACT"} />
+      <Footer value={"This site was realised with REACT"} />
     </div>
   );
 };
