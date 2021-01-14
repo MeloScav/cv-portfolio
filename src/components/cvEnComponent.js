@@ -200,7 +200,7 @@ const CvEnComponent = (props) => {
       </div>
       <div className={"download"}>
         <a
-          href="https://github.com/MeloScav/cv-portfolio/raw/master/CV-SCAVEZZONI-Meloe-FR.pdf"
+          href="https://github.com/MeloScav/cv-portfolio/raw/master/CV-SCAVEZZONI-Meloe.pdf"
           download="CV-SCAVEZZONI-Meloe"
         >
           <button type={"button"}>{"Download the CV in pdf"} </button>
