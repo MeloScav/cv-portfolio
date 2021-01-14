@@ -112,9 +112,6 @@
 
     .trainingBecode,
     .fleronTraining,
-    .uniV,
-    .uniPsy,
-    .uniSc,
     .saintJacques {
       display: flex;
       flex-direction: row;
@@ -128,9 +125,6 @@
 
     .titleTrainingBecode,
     .titleTrainingFleron,
-    .titleTrainingUniV,
-    .titleTrainingUniPsy,
-    .titleTrainingUniSc,
     .titleTrainingSJ {
       width: 30%;
       text-align: center;
@@ -140,9 +134,6 @@
 
     .dateTrainingBecode,
     .dateTrainingFleron,
-    .dateTrainingUniV,
-    .dateTrainingUniPsy,
-    .dateTrainingUniSc,
     .dateTrainingSJ {
       height: calculateRem(30);
       line-height: calculateRem(30);
@@ -155,9 +146,6 @@
 
     .descriptionTrainingBecode,
     .descriptionTrainingFleron,
-    .descriptionTrainingUniV,
-    .descriptionTrainingUniPsy,
-    .descriptionTrainingUniSc,
     .descriptionTrainingSJ {
       width: 34%;
       text-align: center;
@@ -170,7 +158,7 @@
         color: $yellow;
       }
       .dateTrainingBecode {
-        width: calculateRem(60);
+        width: calculateRem(70);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }
@@ -183,37 +171,7 @@
     // FLERON
     .fleronTraining {
       .dateTrainingFleron {
-        width: calculateRem(110);
-        @media (max-width: 1024px) {
-          width: calculateRem(120);
-        }
-      }
-    }
-
-    // UNIV VETE
-    .uniV {
-      .dateTrainingUniV {
-        width: calculateRem(160);
-        @media (max-width: 1024px) {
-          width: calculateRem(120);
-        }
-      }
-    }
-
-    // UNIV PSY
-    .uniPsy {
-      .dateTrainingUniPsy {
-        width: calculateRem(210);
-        @media (max-width: 1024px) {
-          width: calculateRem(120);
-        }
-      }
-    }
-
-    // UNIV SCIENCES H&S
-    .uniSc {
-      .dateTrainingUniSc {
-        width: calculateRem(250);
+        width: calculateRem(140);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }
@@ -223,7 +181,7 @@
     // SAINT-JACQUES
     .saintJacques {
       .dateTrainingSJ {
-        width: calculateRem(290);
+        width: calculateRem(210);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }

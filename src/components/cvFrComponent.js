@@ -112,25 +112,6 @@ const CvFrComponent = (props) => {
             {"Diplômée en tant qu'assistante vétérinaire"}
           </div>
         </div>
-        <div className={"uniV"}>
-          <div className={"titleTrainingUniV"}>{"Université de Liège"}</div>
-          <div className={"dateTrainingUniV"}>{"2014-2015"}</div>
-          <div className={"descriptionTrainingUniV"}>
-            {"Médecine vétérinaire"}
-          </div>
-        </div>
-        <div className={"uniPsy"}>
-          <div className={"titleTrainingUniPsy"}>{"Université de Liège"}</div>
-          <div className={"dateTrainingUniPsy"}>{"2013-2014"}</div>
-          <div className={"descriptionTrainingUniPsy"}>{"Psychologie"}</div>
-        </div>
-        <div className={"uniSc"}>
-          <div className={"titleTrainingUniSc"}>{"Université de Liège"}</div>
-          <div className={"dateTrainingUniSc"}>{"2012-2013"}</div>
-          <div className={"descriptionTrainingUniSc"}>
-            {"Sciences Humaines et Sociales"}
-          </div>
-        </div>
         <div className={"saintJacques"}>
           <div className={"titleTrainingSJ"}>{"Lycée Saint-Jacques"}</div>
           <div className={"dateTrainingSJ"}>{"2012"}</div>
