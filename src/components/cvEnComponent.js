@@ -55,7 +55,7 @@ const CvEnComponent = (props) => {
             >
               {"canvas: Good knowledge"}
             </canvas>
-            <p>{"HTML/HRML5"}</p>
+            <p>{"HTML/HTML5"}</p>
             <p>{"CSS/CSS3"}</p>
             <p>{"SCSS"}</p>
             <p>{"JavaScript"}</p>
