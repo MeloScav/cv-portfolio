@@ -72,7 +72,7 @@ const CvEnComponent = (props) => {
             </canvas>
             <p>{"Angular"}</p>
             <p>{"Canvas"}</p>
-            <p>{"Git/GitHub"}</p>
+            <p>{"Git / GitHub"}</p>
             <p>{"Bootstrap"}</p>
             <p>{"Redux"}</p>
           </div>
