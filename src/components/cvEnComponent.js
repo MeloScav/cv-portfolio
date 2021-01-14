@@ -99,7 +99,7 @@ const CvEnComponent = (props) => {
       <div className={"blocTraining"}>
         <h2>{"Education"}</h2>
         <div className={"trainingBecode"}>
-          <div className={"titleTrainingBecode"}>{"Becode Liège"}</div>
+          <div className={"titleTrainingBecode"}>{"BeCode Liège"}</div>
           <div className={"dateTrainingBecode"}>{"2019"}</div>
           <div className={"descriptionTrainingBecode"}>
             {"Web development training"}
@@ -134,13 +134,13 @@ const CvEnComponent = (props) => {
         <div className={"hackathonW"}>
           <div className={"date"}>{"2019"}</div>
           <div className={"separator"}></div>
-          <div className={"xp"}>{"WeCargo hackathon"}</div>
+          <div className={"xp"}>{"WeCargo Hackathon"}</div>
         </div>
 
         <div className={"becode"}>
           <div className={"xp"}>
             {
-              "Creation of websites, use of Git / Github, autodidact learning of different languages"
+              "Creation of websites, use of Git / GitHub, autodidact learning of different languages"
             }
           </div>
           <div className={"separator"}></div>
