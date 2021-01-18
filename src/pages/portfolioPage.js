@@ -14,7 +14,9 @@ import ClimActes from "./../assets/climactes.jpg";
 import Coach2 from "./../assets/coach2.jpg";
 import BureauAndre from "./../assets/bureau-andre.jpg";
 import Ghjpsy from "./../assets/ghjpsy.jpg";
+import FerretLand from "./../assets/ferretland.png";
 import Pomodoro from "./../assets/pomodoro.jpg";
+import Bookshelf from "./../assets/bookshelf.png";
 
 const PortfolioPage = () => {
   return (
@@ -22,6 +24,18 @@ const PortfolioPage = () => {
       <h1>{"Portfolio"}</h1>
 
       <div className={"containerImg"}>
+        <a className={"boxImg"} href={"https://bookshelf-ms.netlify.app/auth/signup"}>
+            <img src={Bookshelf} alt="Bookshelf" />
+            <div className={"hover-portfolio"}>
+              <h2>{"Bookshelf"}</h2>
+              <p>
+                {
+                  "A Bookshelf app built using Angular and Firebase."
+                }
+              </p>
+            </div>
+        </a>
+
         <a className={"boxImg"} href={"https://pomodoro-ms.netlify.app/"}>
           <img src={Pomodoro} alt="Pomodoro" />
           <div className={"hover-portfolio"}>
@@ -32,6 +46,18 @@ const PortfolioPage = () => {
               }
             </p>
           </div>
+        </a>
+
+        <a className={"boxImg"} href={"https://ferretland-ms.netlify.app/"}>
+            <img src={FerretLand} alt="FerretLand" />
+            <div className={"hover-portfolio"}>
+              <h2>{"FerretLand"}</h2>
+              <p>
+                {
+                  "A test for a grooming website"
+                }
+              </p>
+            </div>
         </a>
 
         <a className={"boxImg"} href={"https://www.ghjpsy.org/"}>
