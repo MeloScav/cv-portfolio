@@ -75,6 +75,8 @@
   .blocSkills {
     position: relative;
     @include flexCenter(column);
+    margin-bottom: calculateRem(25);
+
     h2 {
       color: #f5f749;
       font-weight: bold;
@@ -82,7 +84,6 @@
     .skills {
       @include flexCenter();
       color: rgb(241, 235, 235);
-      margin-bottom: 1rem;
 
       .skillTop,
       .skillMiddle,
@@ -91,6 +92,7 @@
       .connaissanceMoyenne,
       .connaissanceBasique {
         @include flexCenter(column);
+        align-self: flex-start;
         margin-top: 1rem;
         margin-left: calculateRem(30);
         margin-right: calculateRem(30);
@@ -105,6 +107,7 @@
   .blocTraining {
     position: relative;
     @include flexCenter(column);
+    margin-bottom: calculateRem(25);
 
     h2 {
       color: #d7263d;
@@ -191,7 +194,6 @@
 
   /*  Experiences  */
   .blocXp {
-    margin-top: calculateRem(20);
     margin-bottom: calculateRem(25);
     position: relative;
     @include flexCenter(column);
