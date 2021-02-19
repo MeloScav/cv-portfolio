@@ -75,6 +75,7 @@ const CvEnComponent = (props) => {
             <p>{"Git / GitHub"}</p>
             <p>{"Bootstrap"}</p>
             <p>{"Redux"}</p>
+            <p>{"AdobeXD"}</p>
           </div>
           <div className={"skillBasic"}>
             <canvas
@@ -86,6 +87,7 @@ const CvEnComponent = (props) => {
               {"canvas: Basic knowledge"}
             </canvas>
             <p>{"PHP"}</p>
+            <p>{"MySQL"}</p>
             <p>{"TypeScript"}</p>
             <p>{"WordPress"}</p>
             <p>{"Parcel"}</p>
