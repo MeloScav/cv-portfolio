@@ -101,6 +101,13 @@ const CvFrComponent = (props) => {
       {/*  Education */}
       <div className={"blocTraining"}>
         <h2>{"Education"}</h2>
+        <div className={"trainingUdemy"}>
+          <div className={"titleTrainingUdemy"}>{"Udemy"}</div>
+          <div className={"dateTrainingUdemy"}>{"2021"}</div>
+          <div className={"descriptionTrainingUdemy"}>
+            {"Devenir Web Designer"}
+          </div>
+        </div>
         <div className={"trainingBecode"}>
           <div className={"titleTrainingBecode"}>{"Becode Liège"}</div>
           <div className={"dateTrainingBecode"}>{"2019"}</div>

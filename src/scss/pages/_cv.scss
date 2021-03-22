@@ -113,6 +113,7 @@
       color: #d7263d;
     }
 
+    .trainingUdemy,
     .trainingBecode,
     .fleronTraining,
     .saintJacques {
@@ -126,6 +127,7 @@
       width: 80%;
     }
 
+    .titleTrainingUdemy,
     .titleTrainingBecode,
     .titleTrainingFleron,
     .titleTrainingSJ {
@@ -135,6 +137,7 @@
       font-weight: bold;
     }
 
+    .dateTrainingUdemy,
     .dateTrainingBecode,
     .dateTrainingFleron,
     .dateTrainingSJ {
@@ -147,6 +150,7 @@
       text-align: center;
     }
 
+    .descriptionTrainingUdemy,
     .descriptionTrainingBecode,
     .descriptionTrainingFleron,
     .descriptionTrainingSJ {
@@ -155,13 +159,29 @@
       font-style: italic;
     }
 
+    // UDEMY
+    .trainingUdemy {
+      .titleTrainingUdemy {
+        color: $yellow;
+      }
+      .dateTrainingUdemy {
+        width: calculateRem(70);
+        @media (max-width: 1024px) {
+          width: calculateRem(120);
+        }
+      }
+      .descriptionTrainingUdemy {
+        color: $yellow;
+      }
+    }
+
     // BECODE
     .trainingBecode {
       .titleTrainingBecode {
         color: $yellow;
       }
       .dateTrainingBecode {
-        width: calculateRem(70);
+        width: calculateRem(140);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }
@@ -174,7 +194,7 @@
     // FLERON
     .fleronTraining {
       .dateTrainingFleron {
-        width: calculateRem(140);
+        width: calculateRem(210);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }
@@ -184,7 +204,7 @@
     // SAINT-JACQUES
     .saintJacques {
       .dateTrainingSJ {
-        width: calculateRem(210);
+        width: calculateRem(280);
         @media (max-width: 1024px) {
           width: calculateRem(120);
         }
