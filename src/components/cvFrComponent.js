@@ -71,11 +71,12 @@ const CvFrComponent = (props) => {
               {"canvas: Middle knowledge"}
             </canvas>
             <p>{"Angular"}</p>
-            <p>{"Canvas"}</p>
             <p>{"Git / GitHub"}</p>
             <p>{"Bootstrap"}</p>
             <p>{"Redux"}</p>
-            <p>{"AdobeXD"}</p>
+            <p>{"Adobe XD"}</p>
+            <p>{"PHP"}</p>
+            <p>{"phpMyAdmin"}</p>
           </div>
           <div className={"skillBasic"}>
             <canvas
@@ -86,7 +87,6 @@ const CvFrComponent = (props) => {
             >
               {"canvas: Basic knowledge"}
             </canvas>
-            <p>{"PHP"}</p>
             <p>{"MySQL"}</p>
             <p>{"TypeScript"}</p>
             <p>{"WordPress"}</p>
